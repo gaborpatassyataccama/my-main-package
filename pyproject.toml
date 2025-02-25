@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "my-main-package"
+name = "main_package"
 version = "0.1.0"
 description = "A public package"
 authors = ["Your Name <you@example.com>"]
