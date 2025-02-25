@@ -5,11 +5,10 @@ description = "A public package"
 authors = ["Your Name <you@example.com>"]
 packages = [{include = "main_package"}]
 
-[tool.poetry.dependencies]
-python = "^3.8"
 
 [tool.poetry.extras]
 private = ["my-private-dependency"]
 
 [tool.poetry.dependencies]
+python = "^3.8"
 my-private-dependency = { git = "https://github.com/clytaemnestra/my-private-dependency.git", optional = true }
