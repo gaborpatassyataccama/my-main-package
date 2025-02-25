@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my-main-package"
+version = "0.1.0"
+description = "A public package"
+authors = ["Your Name <you@example.com>"]
+packages = [{include = "main_package"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.extras]
+private = ["my-private-dependency"]
+
+[tool.poetry.dependencies]
+my-private-dependency = { git = "https://github.com/clytaemnestra/my-private-dependency.git", optional = true }
