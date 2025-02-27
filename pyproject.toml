@@ -1,10 +1,13 @@
 [tool.poetry]
 name = "main_package"
-version = "0.1.0"
+version = "0.1.1"
 description = "A public package"
 authors = ["Your Name <you@example.com>"]
 packages = [{include = "main_package"}]
 
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "^3.8"
